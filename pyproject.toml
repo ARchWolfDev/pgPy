@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pgPy"
+version = "0.1.0"
+description = "A simple example project"
+authors = [
+  { name="Andrei Rachieru", email="andrei.rachieru96@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+  "psycopg2-binary==2.9.11",
+]
