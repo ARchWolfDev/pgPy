@@ -203,5 +203,3 @@ class Database:
 
     def query(self, query: str):
         return Database._Query(self, query)
-
-
