@@ -40,6 +40,7 @@ class Database:
 
 
     class _Create:
+
         def __init__(self, db):
             self.db = db
 
@@ -58,6 +59,7 @@ class Database:
 
 
     class _Select:
+
         def __init__(self, db, table: str, columns: str = "*"):
             self.db = db
             self.table = table
@@ -110,6 +112,7 @@ class Database:
 
 
     class _Insert:
+
         def __init__(self, db, table: str, data: dict):
             self.db = db
             self.table = table
@@ -136,6 +139,7 @@ class Database:
 
 
     class _Update:
+
         def __init__(self, db, table: str, data: dict, where_val: str, where_key: str = "id", where_opr: str = "="):
             self.db = db
             self.table = table
@@ -164,6 +168,7 @@ class Database:
 
 
     class _Delete:
+
         def __init__(self, db, table: str, where_val: str, where_key: str = "id", where_opr: str = "="):
             self.db = db
             self.table = table
@@ -185,6 +190,7 @@ class Database:
 
 
     class _Query:
+
         def __init__(self, db, query: str):
             self.db = db
             self.query = query
